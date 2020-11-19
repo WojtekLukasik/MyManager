@@ -1,0 +1,19 @@
+﻿<Window x:Class="MyManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyManager"
+        xmlns:Views="clr-namespace:MyManager.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500*"/>
+            <ColumnDefinition Width="500*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Name="leftGrid" Margin="-4,0,0,-4"/>
+        <Grid Grid.Column="1" Name="rightGrid" HorizontalAlignment="Left" Width="500" Margin="0,0,-4,-4"/>
+
+    </Grid>
+</Window>

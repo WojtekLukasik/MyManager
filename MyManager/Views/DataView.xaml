@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="MyManager.Views.DataView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyManager.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="500">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF727272" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFFCFCFC" Offset="0.107"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="dataName" Content="Nazwa" HorizontalAlignment="Left" Width="79" FontSize="9" Margin="0,5,0,3"/>
+        <Button x:Name="dataOpenButton" Content="Otwórz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Margin="341,5,0,0" FontSize="9" Height="20" Click="DataOpenButton_Click"/>
+        <Label x:Name="dataCreationDate"  Content="creationDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,5,0,0" Width="157" FontSize="9"/>
+        <Button x:Name="dataCopy" Content="Kopiuj" HorizontalAlignment="Left" Width="42" Margin="388,5,0,5" FontSize="9" Click="DataCopy_Click"/>
+        <Button x:Name="dataDelete" Content="Usuń" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Margin="435,5,0,0" FontSize="9" Height="20" Click="DeleteObject"/>
+        <Label x:Name="dataType" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="287,2,0,0"/>
+
+    </Grid>
+</UserControl>

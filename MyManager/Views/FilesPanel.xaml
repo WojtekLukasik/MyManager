@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="MyManager.Views.FilesPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyManager.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid Background="#FFD6C9C9">
+        <ScrollViewer HorizontalAlignment="Left" Height="378" VerticalAlignment="Top" Width="500" Margin="0,24,0,0">
+            <StackPanel Name="filesStack"/>
+        </ScrollViewer>
+        <Button x:Name="createNewDirectoryButton" Content="Nowy folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,432,0,0" Click="CreateNewDirectoryButton_Click"/>
+        <Button x:Name="searchButton" Content="Szukaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,407,0,0"/>
+        <TextBox x:Name="searchName" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="90,407,0,0" RenderTransformOrigin="0.472,-0.817" TextChanged="SearchName_TextChanged"/>
+        <TextBox x:Name="newDirectoryName" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="90,432,0,0" />
+        <Button x:Name="sortButton" Content="Sortuj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,407,0,0" Click="SortButton_Click"/>
+        <CheckBox x:Name="dateSortCheckBox" Content="Po dacie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,410,0,0" RenderTransformOrigin="1.724,0.267"/>
+        <CheckBox x:Name="nameSortCheckBox" Content="Po nazwie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,410,0,0"/>
+        <Button x:Name="backDirectory" Content="Cofinj folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,432,0,0" Click="BackDirectory_Click"/>
+        <Label x:Name="currentPathLabel" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24" Width="462" Background="#FFFFFDFD"/>
+        <Image x:Name="imageReader" Visibility="Hidden" HorizontalAlignment="Left" Height="383" VerticalAlignment="Top" Width="500" Margin="0,24,0,0"/>
+        <Button x:Name="closeReader" Content="Zamknij przeglądarkę" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="295,432,0,0" Click="CloseReader_Click"/>
+        <TextBox x:Name="textReader"  IsReadOnly="True" Visibility="Hidden" HorizontalAlignment="Left" Height="378" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" Margin="0,24,0,0"/>
+        <ComboBox x:Name="drivesList" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Margin="462,0,0,0" Height="24" SelectionChanged="DrivesList_SelectionChanged"/>
+
+    </Grid>
+</UserControl>
